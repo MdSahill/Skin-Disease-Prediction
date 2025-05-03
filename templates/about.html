@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="about-section">
+    <div class="about-container">
+        <h2>About SkinCheck</h2>
+        
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Technology Behind the Project</h3>
+                <p>SkinCheck uses a deep residual neural network (ResNet) trained on thousands of dermatological images to classify skin conditions with high accuracy.</p>
+                
+                <h3>Model Specifications</h3>
+                <ul>
+                    <li><strong>Architecture:</strong> Custom ResNet with dropout layers</li>
+                    <li><strong>Input Size:</strong> 224x224 RGB images</li>
+                    <li><strong>Classes:</strong> 22 different skin conditions</li>
+                    <li><strong>Training:</strong> Adam optimizer with cross-entropy loss</li>
+                </ul>
+                
+                <h3>Project Features</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-brain"></i>
+                        <h4>Deep Learning</h4>
+                        <p>State-of-the-art convolutional neural networks</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>Responsive Design</h4>
+                        <p>Works on all devices from mobile to desktop</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Confidence Metrics</h4>
+                        <p>Shows prediction confidence levels</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-code"></i>
+                        <h4>Clean Code</h4>
+                        <p>Well-structured Python and PyTorch implementation</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='images/model-architecture.png') }}" alt="Model Architecture">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

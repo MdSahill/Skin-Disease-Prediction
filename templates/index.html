@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1>Skin Disease Classification</h1>
+        <p>Upload an image of a skin condition to get an AI-powered analysis</p>
+        
+        <form id="uploadForm" action="/predict" method="post" enctype="multipart/form-data">
+            <div class="upload-area" id="uploadArea">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <p>Drag & drop your image here or click to browse</p>
+                <input type="file" name="image" id="fileInput" accept="image/*" required>
+            </div>
+            <div class="preview" id="preview"></div>
+            <button type="submit" class="btn" id="submitBtn">Analyze Image</button>
+        </form>
+        
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-bolt"></i>
+                <h3>Fast Analysis</h3>
+                <p>Get results in seconds using our deep learning model</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-shield-alt"></i>
+                <h3>22 Conditions</h3>
+                <p>Recognizes a wide range of dermatological conditions</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-user-md"></i>
+                <h3>Disclaimer</h3>
+                <p>Not a substitute for professional medical advice</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

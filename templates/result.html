@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="result-section">
+    <div class="result-container">
+        <h2>Analysis Results</h2>
+        
+        <div class="result-content">
+            <div class="image-display">
+                <img src="{{image_path}}" alt="Analyzed Skin Condition" id="resultImage">
+            </div>
+            
+            <div class="prediction-results">
+                <div class="primary-prediction">
+                    <h3>Most Likely Condition</h3>
+                    <div class="prediction-card primary">
+                        <span class="prediction-name">{{ primary_prediction.class }}</span>
+                        <div class="confidence-meter">
+                            <div class="confidence-fill" style="width: {{ primary_prediction.confidence }}%"></div>
+                            <span class="confidence-value">{{ primary_prediction.confidence }}% confidence</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="other-predictions">
+                    <h4>Other Possible Conditions</h4>
+                    {% for pred in predictions[1:3] %}
+                    <div class="prediction-card">
+                        <span class="prediction-name">{{ pred.class }}</span>
+                        <div class="confidence-meter">
+                            <div class="confidence-fill" style="width: {{ pred.confidence }}%"></div>
+                            <span class="confidence-value">{{ pred.confidence }}%</span>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                
+                <div class="disclaimer">
+                    <p><i class="fas fa-exclamation-triangle"></i> <strong>Important:</strong> This tool is for informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment.</p>
+                </div>
+                
+                <div class="action-buttons">
+                    <a href="/" class="btn"><i class="fas fa-redo"></i> Try Another</a>
+                    <button class="btn secondary"><i class="fas fa-info-circle"></i> Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
