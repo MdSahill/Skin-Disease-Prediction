@@ -67,3 +67,10 @@ pip install -r requirements.txt
 -Validation Accuracy: 85%
 
 -Loss: 0.23 (Cross-Entropy)
+
+## 📊 Performance
+| Metric              | Value |
+|---------------------|-------|
+| **Inference Time**  |  1.8s |
+| **Model Size**      |  48MB |
+| **Requests/sec**    |  32   |
