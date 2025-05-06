@@ -8,14 +8,14 @@ A deep learning web application that classifies **22 skin conditions** with **85
 ![Demo GIF](static/images/demo.gif) *(Add your demo.gif to /static/images/)*
 
 ## 📌 Table of Contents
-- [System Architecture](#-System-Architecture)
+- [System Architecture](#-SystemArchitecture)
 - [Features](#-Features)
 - [Tech Stack](#-Tech-Stack)
 - [How to Run](#-Quick-Start)
 - [Performance](#-Performance)
 - [Demo](#-demo)
 - [Contributing](#-contributing)
-## 🏗️ System Architecture
+## 🏗️ SystemArchitecture
 
 ```mermaid
 graph TD
