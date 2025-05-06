@@ -82,3 +82,8 @@ pip install -r requirements.txt
 | **Inference Time**  |  1.8s |
 | **Model Size**      |  48MB |
 | **Requests/sec**    |  32   |
+
+## Demo
+https://github.com/user-attachments/assets/aee99455-f2c0-4700-9c31-54d334df27f0
+
+
