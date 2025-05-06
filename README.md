@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red)](https://pytorch.org/)
 [![Flask](https://img.shields.io/badge/Flask-2.0-lightgrey)](https://flask.palletsprojects.com/)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE) <br>
 A deep learning web application that classifies **22 skin conditions** with **85% accuracy** using a custom ResNet model.
 ![Demo GIF](static/images/demo.gif) *(Add your demo.gif to /static/images/)*
 
@@ -55,8 +55,8 @@ graph TD
 git clone https://github.com/yourusername/skin-disease-classifier.git
 cd skin-disease-classifier
 ```
-# Install dependencies
+## Install dependencies
+```python
 pip install -r requirements.txt
-
-# Download model weights (place in /model folder)
-wget [YOUR_MODEL_URL] -O model/resnet_checkpoint.pth
+```
+## Download model weights (place in /model folder)
