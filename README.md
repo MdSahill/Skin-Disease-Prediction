@@ -60,3 +60,10 @@ cd skin-disease-classifier
 pip install -r requirements.txt
 ```
 ## Download model weights (place in /model folder)
+### Training Metrics:
+
+-Training Accuracy: 92%
+
+-Validation Accuracy: 85%
+
+-Loss: 0.23 (Cross-Entropy)
