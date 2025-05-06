@@ -7,6 +7,14 @@
 A deep learning web application that classifies **22 skin conditions** with **85% accuracy** using a custom ResNet model.
 ![Demo GIF](static/images/demo.gif) *(Add your demo.gif to /static/images/)*
 
+## 📌 Table of Contents
+- [System Architecture](#-System-Architecture)
+- [Features](#-Features)
+- [Tech Stack](#-Tech-Stack)
+- [How to Run](#-Quick-Start)
+- [Performance](#-Performance)
+- [Demo](#-demo)
+- [Contributing](#-contributing)
 ## 🏗️ System Architecture
 
 ```mermaid
