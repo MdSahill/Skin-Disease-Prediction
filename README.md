@@ -4,7 +4,7 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red)](https://pytorch.org/)
 [![Flask](https://img.shields.io/badge/Flask-2.0-lightgrey)](https://flask.palletsprojects.com/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-
+A deep learning web application that classifies **22 skin conditions** with **85% accuracy** using a custom ResNet model.
 ![Demo GIF](static/images/demo.gif) *(Add your demo.gif to /static/images/)*
 
 ## 🏗️ System Architecture
@@ -26,3 +26,37 @@ graph TD
         H --> I[Global Pooling]
         I --> J[22-class Classifier]
     end
+```
+## 🌟 Features
+- 🖼️ Upload skin images via drag-and-drop
+- 🔍 AI-powered analysis with confidence scores
+- 📱 Mobile-responsive interface
+- 🏥 Covers 22 dermatological conditions
+- ⚡ Fast prediction (<2 seconds)
+
+## 🛠️ Tech Stack
+| Component       | Technology |
+|-----------------|------------|
+| **Backend**     | Python, Flask |
+| **Deep Learning** | PyTorch, TorchVision |
+| **Frontend**    | HTML5, CSS3, JavaScript |
+| **Deployment**  | Heroku, Docker |
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Python 3.9+
+- pip package manager
+- GPU recommended (but not required)
+
+### Installation
+```bash
+# Clone repository
+git clone https://github.com/yourusername/skin-disease-classifier.git
+cd skin-disease-classifier
+```
+# Install dependencies
+pip install -r requirements.txt
+
+# Download model weights (place in /model folder)
+wget [YOUR_MODEL_URL] -O model/resnet_checkpoint.pth
