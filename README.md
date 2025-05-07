@@ -5,7 +5,7 @@
 [![Flask](https://img.shields.io/badge/Flask-2.0-lightgrey)](https://flask.palletsprojects.com/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE) <br>
 A deep learning web application that classifies **22 skin conditions** with **85% accuracy** using a custom ResNet model.
-![Demo GIF](static/images/demo.gif) *(Add your demo.gif to /static/images/)*
+
 
 ## 📌 Table of Contents
 - [System Architecture](#-System-Architecture)
